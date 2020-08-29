@@ -34,4 +34,24 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    //Material Design
+    implementation "com.google.android.material:material:$materialDesign"
+
+    //Loading indicators
+    implementation "com.wang.avi:library:$wangLoading"
+
+    //Kotlin Coroutines NB: DON'T UPGRADE TO 1.3.7 TO AVOID VERIFIER BUG, WAIT TILL 1.4.0
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
+
+    //Moshi
+    implementation "com.squareup.moshi:moshi-kotlin:$moshi"
+
+    //Moshi Converter for Retrofit
+    implementation "com.squareup.retrofit2:converter-moshi:$moshiConverter"
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+
 }

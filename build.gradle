@@ -24,3 +24,12 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext{
+    coroutines = '1.3.6'
+    moshi = '1.9.3'
+    moshiConverter = '2.4.0'
+    retrofit = '2.9.0'
+    wangLoading = '2.1.3'
+    materialDesign = '1.2.0'
+}
