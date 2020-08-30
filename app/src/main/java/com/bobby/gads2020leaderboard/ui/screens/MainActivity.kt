@@ -41,13 +41,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
-
-        setUpViewPagerAndAdapter()
     }
 
     private fun setUpViewPagerAndAdapter() {
-        loadingIcon.visibility = View.INVISIBLE
-        viewPager.visibility = View.VISIBLE
+
         val adapter = LeadersAdapter(mLearningLeaders, mSkillIQLeaders, this)
         viewPager.adapter = adapter
 
@@ -62,6 +59,9 @@ class MainActivity : AppCompatActivity() {
             }
 
         }.attach()
+
+        loadingIcon.visibility = View.INVISIBLE
+        viewPager.visibility = View.VISIBLE
     }
 
     private fun getLeaders() {

@@ -53,6 +53,7 @@
         />
 
     <ImageView
+        android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:contentDescription="@string/divider"
@@ -73,6 +74,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/firstNameET"
+            android:singleLine="true"
+            android:inputType="textPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -93,6 +96,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/lastNameET"
+            android:singleLine="true"
+            android:inputType="textPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -113,7 +118,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailET"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -131,6 +138,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/linkET"
+            android:singleLine="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -176,5 +184,19 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.75" />
 
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/submitLoadingIcon"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintVertical_bias="0.4"
+        app:indicatorColor="@android:color/holo_orange_dark"
+        app:indicatorName="LineScalePulseOutIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
