@@ -17,4 +17,5 @@
     <string name="are_you_sure">Are you sure?</string>
     <string name="submission_successful">Submission successful</string>
     <string name="submission_not_successful">Submission not successful</string>
+    <string name="image">image</string>
 </resources>
