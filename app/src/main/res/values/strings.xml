@@ -3,4 +3,13 @@
     <string name="submit">Submit</string>
     <string name="learning_leaders">Learning Leaders</string>
     <string name="skill_iq_leaders">Skill IQ Leaders</string>
+    <string name="back">back</string>
+    <string name="project_submission">Project Submission</string>
+    <string name="google_code_bracket">google code bracket</string>
+    <string name="google_text">google text</string>
+    <string name="divider">divider</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="github_link">Project on GITHUB (link)</string>
 </resources>
